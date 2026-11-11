@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Air Pointer — point, click and type on your computer from your iPhone</title>
+<meta name="description" content="Turn your iPhone or iPad into a pointer for your Mac or PC. Point to move the cursor, tap to click, type from the phone. All over Bluetooth: no account, no cloud.">
+<meta property="og:title" content="Air Pointer">
+<meta property="og:description" content="A pointer for your Mac and PC, from your iPhone. Bluetooth only, no account.">
+<meta property="og:type" content="website">
+<!-- Add once the app is live: <meta name="apple-itunes-app" content="app-id=XXXXXXXXXX"> -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <a class="wordmark" href="/">Air Pointer</a>
+    <nav>
+      <a href="#download">Download</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Your iPhone is the pointer.</h1>
+    <p class="lede">Point at the screen and the cursor follows, like a laser pointer. Tap to click, hold to drag, two fingers to scroll. Over Bluetooth, with no account and no cloud.</p>
+
+    <!-- Replace with the App Store badge once the listing is live:
+    <a class="actions" href="https://apps.apple.com/app/idXXXXXXXXXX">
+      <img src="assets/app-store-badge.svg" alt="Download on the App Store" height="52">
+    </a>
+    -->
+
+    <div class="actions">
+      <a class="btn primary" href="https://github.com/michelevettone/airpointer-download/releases/latest/download/AirPointerReceiver.zip">Download for macOS</a>
+      <a class="btn secondary" href="https://github.com/michelevettone/airpointer-download/releases/latest/download/AirPointerWindows.zip">Download for Windows</a>
+    </div>
+    <p class="note">The companion app is free. macOS 14 or later, or Windows 10/11 with a Bluetooth LE adapter.</p>
+  </div>
+
+  <div class="shots">
+    <img src="assets/aim.png" alt="Aim mode: pointing the phone to move the cursor" loading="lazy">
+    <img src="assets/present.png" alt="Present mode: slides controls and a laser pointer" loading="lazy">
+    <img src="assets/trackpad.png" alt="Trackpad mode with left and right buttons" loading="lazy">
+  </div>
+
+  <section id="download">
+    <h2>What it does</h2>
+    <ul class="features">
+      <li><strong>Aim</strong> — point, click, drag, scroll.</li>
+      <li><strong>Trackpad</strong> — relative movement, with dedicated Left and Right buttons.</li>
+      <li><strong>Keyboard</strong> — type on the computer, including esc, tab, arrows and modifiers; Mission Control, Task View, spaces and the app switcher.</li>
+      <li><strong>Present</strong> — point at the slides like a laser pointer, with prev/next, black screen and Esc.</li>
+      <li><strong>Pause</strong> — it pauses when you reach for the computer's own mouse, and from the menu bar or tray.</li>
+      <li><strong>Several computers</strong> — pair them, rename them, pick the one to drive.</li>
+      <li><strong>No account, no cloud</strong> — everything travels directly over Bluetooth.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Requirements</h2>
+    <p>iPhone or iPad with iOS 17 or later. A Mac with macOS 14 or later, or a PC with Windows 10/11 and a Bluetooth LE adapter. The companion app is a free download for both.</p>
+    <p class="note">On the Mac, Air Pointer needs Bluetooth and Accessibility permissions. On Windows, the plain build needs a PC where the Bluetooth LE server can run; a few machines need the packaged (MSIX) build instead.</p>
+  </section>
+
+  <section class="faq">
+    <h2>Common questions</h2>
+
+    <h3>The cursor doesn't move.</h3>
+    <p>Accessibility permission is missing: System Settings › Privacy &amp; Security › Accessibility › enable Air Pointer, then reopen the app.</p>
+
+    <h3>Mission Control or spaces do nothing.</h3>
+    <p>They are posted through System Events. The first time macOS asks “Air Pointer wants to control System Events”: allow it. If you denied it, re-enable it in System Settings › Privacy &amp; Security › Automation.</p>
+
+    <h3>It pauses by itself.</h3>
+    <p>It pauses when you use the computer's own mouse or trackpad, and when the phone app goes to the background. Press Resume on the phone, in the menu bar, or in the notch island.</p>
+
+    <h3>The phone must stay on.</h3>
+    <p>iOS suspends motion updates in the background, so keep the app open with the screen on while you use it.</p>
+  </section>
+
+  <footer>
+    <div>Air Pointer · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="https://github.com/michelevettone/airpointer-download">Downloads</a></div>
+    <div>No account, no tracking, no data leaves your devices.</div>
+  </footer>
+
+</div>
+</body>
+</html>
