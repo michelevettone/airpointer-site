@@ -5,46 +5,82 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy — Air Pointer</title>
 <meta name="description" content="Air Pointer does not collect, store, or transmit any personal data.">
+<meta name="theme-color" content="#000000">
+<!-- When the App Store listing is live:
+<meta name="apple-itunes-app" content="app-id=6833520222">
+-->
 <link rel="icon" type="image/png" href="/favicon-dark.png" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/png" href="/favicon-light.png" media="(prefers-color-scheme: light)">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
+<a class="skip" href="#main">Skip to content</a>
 
-  <header>
-    <a class="wordmark" href="/">Air Pointer</a>
-    <nav>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <img src="icon-512.png" alt="" width="26" height="26">
+      <span>Air Pointer</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="/#modes">Modes</a>
+      <a href="/#why">Why Air Pointer</a>
+      <a href="/support">Support</a>
+    </nav>
+    <a class="nav-cta" href="/#download">Download</a>
+  </div>
+</header>
+
+<main class="shell doc" id="main">
+  <h1>Privacy Policy</h1>
+  <p class="note">Last updated: 11 November 2026</p>
+
+  <p><strong>Air Pointer does not collect, store, or transmit any personal data.</strong></p>
+
+  <ul>
+    <li><strong>No accounts.</strong> The app has no sign-up, login, or profile.</li>
+    <li><strong>No analytics or ads.</strong> No tracking SDKs, no advertising identifiers, no third-party analytics.</li>
+    <li><strong>Everything stays on your devices.</strong> Settings (paired computers, name, sensitivity, keys) are stored locally on the iPhone. Pointer, click, scroll and keyboard commands travel directly to the paired computer over Bluetooth; they never pass through a server.</li>
+    <li><strong>Bluetooth.</strong> The permission is used only to find and connect to the computer running the companion app. The name you set under “This iPhone” is sent to that computer so you recognise the phone there.</li>
+    <li><strong>Camera.</strong> The permission is used only to scan the pairing QR code shown on the computer. The camera frames are processed on the device to read the code; nothing is stored or sent.</li>
+    <li><strong>Secure pairing.</strong> The one-time secret from the QR code is kept in the iOS Keychain and used to encrypt the link between the phone and that computer. It is not sent anywhere else.</li>
+    <li><strong>Companion app download.</strong> The companion app is downloaded from a GitHub Releases page. GitHub may log the download as any web server does; that is outside this app.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Questions or requests: open an issue at <a href="https://github.com/michelevettone/airpointer-download/issues">github.com/michelevettone/airpointer-download/issues</a>.</p>
+</main>
+
+<footer>
+  <div class="shell footer-grid">
+    <div class="footer-brand">
+      <img src="icon-512.png" alt="" width="34" height="34">
+      <p><strong>Air Pointer</strong><br>A pointer for Mac and PC, from your iPhone.</p>
+    </div>
+    <nav aria-label="Product">
+      <p class="footer-title">Product</p>
+      <a href="/#modes">Modes</a>
+      <a href="/#why">Why Air Pointer</a>
+      <a href="/#download">Download</a>
+      <a href="https://testflight.apple.com/join/q9EmkjqU">TestFlight beta</a>
+    </nav>
+    <nav aria-label="Help">
+      <p class="footer-title">Help</p>
       <a href="/support">Support</a>
       <a href="/privacy">Privacy</a>
+      <a href="https://github.com/michelevettone/airpointer-download/releases">All releases</a>
     </nav>
-  </header>
-
-  <div class="doc">
-    <h1>Privacy Policy</h1>
-    <p class="note">Last updated: 11 November 2026</p>
-
-    <p><strong>Air Pointer does not collect, store, or transmit any personal data.</strong></p>
-
-    <ul>
-      <li><strong>No accounts.</strong> The app has no sign-up, login, or profile.</li>
-      <li><strong>No analytics or ads.</strong> No tracking SDKs, no advertising identifiers, no third-party analytics.</li>
-      <li><strong>Everything stays on your devices.</strong> Settings (paired computers, name, sensitivity, keys) are stored locally on the iPhone. Pointer, click, scroll and keyboard commands travel directly to the paired computer over Bluetooth; they never pass through a server.</li>
-      <li><strong>Bluetooth.</strong> The permission is used only to find and connect to the computer running the companion app. The name you set under “This iPhone” is sent to that computer so you recognise the phone there.</li>
-      <li><strong>Camera.</strong> The permission is used only to scan the pairing QR code shown on the computer. The camera frames are processed on the device to read the code; nothing is stored or sent.</li>
-      <li><strong>Secure pairing.</strong> The one-time secret from the QR code is kept in the iOS Keychain and used to encrypt the link between the phone and that computer. It is not sent anywhere else.</li>
-      <li><strong>Companion app download.</strong> The companion app is downloaded from a GitHub Releases page. GitHub may log the download as any web server does; that is outside this app.</li>
-    </ul>
-
-    <h2>Contact</h2>
-    <p>Questions or requests: open an issue at <a href="https://github.com/michelevettone/airpointer-download/issues">github.com/michelevettone/airpointer-download/issues</a>.</p>
+    <div>
+      <p class="footer-title">Contact</p>
+      <a href="https://github.com/michelevettone/airpointer-download/issues">Report an issue</a>
+    </div>
   </div>
+  <div class="shell footer-bottom">
+    <p>© 2026 Michele Vettone</p>
+    <p>No cookies. No analytics. No scripts.</p>
+  </div>
+</footer>
 
-  <footer>
-    <div>Air Pointer · <a href="/">Home</a> · <a href="/support">Support</a></div>
-  </footer>
-
-</div>
 </body>
 </html>
