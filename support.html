@@ -5,71 +5,106 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Support — Air Pointer</title>
 <meta name="description" content="Setup, permissions, updates and troubleshooting for Air Pointer.">
+<meta name="theme-color" content="#000000">
+<meta name="apple-itunes-app" content="app-id=6833520222">
 <link rel="icon" type="image/png" href="/favicon-dark.png" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/png" href="/favicon-light.png" media="(prefers-color-scheme: light)">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
+<a class="skip" href="#main">Skip to content</a>
 
-  <header>
-    <a class="wordmark" href="/">Air Pointer</a>
-    <nav>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <img src="icon-512.png" alt="" width="26" height="26">
+      <span>Air Pointer</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="/#modes">Modes</a>
+      <a href="/#why">Why Air Pointer</a>
+      <a href="/support">Support</a>
+    </nav>
+    <a class="nav-cta" href="/#download">Download</a>
+  </div>
+</header>
+
+<main class="shell doc" id="main">
+  <h1>Support</h1>
+
+  <h2>Getting started</h2>
+  <p>Air Pointer for iPhone is on the <a href="https://apps.apple.com/app/id6833520222">App Store</a>. To drive your computer, install the free companion first:</p>
+  <ol>
+    <li>Download the companion app: <strong>AirPointer.app</strong> for macOS, or <strong>AirPointerWindows.zip</strong> for Windows, from the <a href="https://github.com/michelevettone/airpointer-download/releases/latest">releases page</a>.</li>
+    <li>Open it and allow <strong>Bluetooth</strong> (on the Mac also <strong>Accessibility</strong>) when asked.</li>
+    <li>Open Air Pointer on the iPhone, then either tap <strong>Pair</strong> next to the computer or scan the QR code shown on it.</li>
+  </ol>
+  <p>The Mac app lives in the menu bar (cursor icon); the Windows app in the tray. On a Mac with a notch, the island shows the same controls.</p>
+
+  <h2>Names and several computers</h2>
+  <p>Under <strong>Settings › This iPhone</strong> you can choose the name the computer shows for this phone. Each computer keeps its own key order, hidden keys and custom shortcuts; switching computer in <strong>Computers</strong> switches its layout.</p>
+
+  <h2>Keys and shortcuts</h2>
+  <p><strong>Settings › Keys</strong> reorders the key strip, hides the ones you don't use and adds your own: press the shortcut on the computer, then give it a name and an icon. Custom keys belong to the computer they were captured on.</p>
+
+  <h2>Windows</h2>
+  <p>Extract <strong>AirPointerWindows.zip</strong> somewhere permanent and run <code>AirPointer.exe</code>. Windows SmartScreen may warn about an unsigned app: <em>More info</em> → <em>Run anyway</em>.</p>
+  <p>Bluetooth on Windows needs the packaged (MSIX) build on some PCs. If the tray says “Bluetooth unavailable” or “Could not start”, the plain .exe cannot host the Bluetooth server there; use the MSIX build instead.</p>
+
+  <h2>Updates</h2>
+  <p>The companion app checks for updates once an hour: <strong>Update to x.y.z</strong> in the Mac menu bar or the Windows tray. On a Mac it replaces itself and restarts; the Accessibility permission is kept because the app is signed with the same identity.</p>
+
+  <h2>FAQ</h2>
+
+  <h3>The cursor doesn't move.</h3>
+  <p>Accessibility permission is missing: System Settings › Privacy &amp; Security › Accessibility › enable Air Pointer. Then reopen the app.</p>
+
+  <h3>Mission Control or spaces do nothing.</h3>
+  <p>They are posted through System Events. The first time, macOS asks “Air Pointer wants to control System Events”: allow it. If you denied it, re-enable it in System Settings › Privacy &amp; Security › Automation.</p>
+
+  <h3>The app pauses by itself.</h3>
+  <p>It pauses when you use the computer's own mouse or trackpad, and when the phone app goes to the background. Press Resume on the phone, in the menu bar, or in the island.</p>
+
+  <h3>The phone must stay open.</h3>
+  <p>iOS suspends motion updates in the background, so keep Air Pointer in the foreground. The screen stays on by itself while the app is open.</p>
+
+  <h3>Where is the companion app?</h3>
+  <p><a href="https://github.com/michelevettone/airpointer-download/releases/latest">github.com/michelevettone/airpointer-download/releases/latest</a></p>
+
+  <h2>Contact</h2>
+  <p>Open an issue at <a href="https://github.com/michelevettone/airpointer-download/issues">github.com/michelevettone/airpointer-download/issues</a>.</p>
+</main>
+
+<footer>
+  <div class="shell footer-grid">
+    <div class="footer-brand">
+      <img src="icon-512.png" alt="" width="34" height="34">
+      <p><strong>Air Pointer</strong><br>A pointer for Mac and PC, from your iPhone.</p>
+    </div>
+    <nav aria-label="Product">
+      <p class="footer-title">Product</p>
+      <a href="/#modes">Modes</a>
+      <a href="/#why">Why Air Pointer</a>
+      <a href="/#download">Download</a>
+      <a href="https://apps.apple.com/app/id6833520222">App Store</a>
+    </nav>
+    <nav aria-label="Help">
+      <p class="footer-title">Help</p>
       <a href="/support">Support</a>
       <a href="/privacy">Privacy</a>
+      <a href="https://github.com/michelevettone/airpointer-download/releases">All releases</a>
     </nav>
-  </header>
-
-  <div class="doc">
-    <h1>Support</h1>
-
-    <h2>Getting started</h2>
-    <ol>
-      <li>Download the companion app: <strong>AirPointer.app</strong> for macOS, or <strong>AirPointerWindows.zip</strong> for Windows, from the <a href="https://github.com/michelevettone/airpointer-download/releases/latest">releases page</a>.</li>
-      <li>Open it and allow <strong>Bluetooth</strong> (on the Mac also <strong>Accessibility</strong>) when asked.</li>
-      <li>Open Air Pointer on the iPhone, then either tap <strong>Pair</strong> next to the computer or scan the QR code shown on it.</li>
-    </ol>
-    <p>The Mac app lives in the menu bar (cursor icon); the Windows app in the tray. On a Mac with a notch, the island shows the same controls.</p>
-
-    <h2>Names and several computers</h2>
-    <p>Under <strong>Settings › This iPhone</strong> you can choose the name the computer shows for this phone. Each computer keeps its own key order, hidden keys and custom shortcuts; switching computer in <strong>Computers</strong> switches its layout.</p>
-
-    <h2>Keys and shortcuts</h2>
-    <p><strong>Settings › Keys</strong> reorders the key strip, hides the ones you don't use and adds your own: press the shortcut on the computer, then give it a name and an icon. Custom keys belong to the computer they were captured on.</p>
-
-    <h2>Windows</h2>
-    <p>Extract <strong>AirPointerWindows.zip</strong> somewhere permanent and run <code>AirPointer.exe</code>. Windows SmartScreen may warn about an unsigned app: <em>More info</em> → <em>Run anyway</em>.</p>
-    <p>Bluetooth on Windows needs the packaged (MSIX) build on some PCs. If the tray says “Bluetooth unavailable” or “Could not start”, the plain .exe cannot host the Bluetooth server there; use the MSIX build instead.</p>
-
-    <h2>Updates</h2>
-    <p>The companion app checks for updates once an hour: <strong>Update to x.y.z</strong> in the Mac menu bar or the Windows tray. On a Mac it replaces itself and restarts; the Accessibility permission is kept because the app is signed with the same identity.</p>
-
-    <h2>FAQ</h2>
-
-    <h3>The cursor doesn't move.</h3>
-    <p>Accessibility permission is missing: System Settings › Privacy &amp; Security › Accessibility › enable Air Pointer. Then reopen the app.</p>
-
-    <h3>Mission Control or spaces do nothing.</h3>
-    <p>They are posted through System Events. The first time, macOS asks “Air Pointer wants to control System Events”: allow it. If you denied it, re-enable it in System Settings › Privacy &amp; Security › Automation.</p>
-
-    <h3>The app pauses by itself.</h3>
-    <p>It pauses when you use the computer's own mouse or trackpad, and when the phone app goes to the background. Press Resume on the phone, in the menu bar, or in the island.</p>
-
-    <h3>The phone must stay on.</h3>
-    <p>iOS suspends motion updates in the background, so keep the app open with the screen on while you use it.</p>
-
-    <h3>Where is the companion app?</h3>
-    <p><a href="https://github.com/michelevettone/airpointer-download/releases/latest">github.com/michelevettone/airpointer-download/releases/latest</a></p>
-
-    <h2>Contact</h2>
-    <p>Open an issue at <a href="https://github.com/michelevettone/airpointer-download/issues">github.com/michelevettone/airpointer-download/issues</a>.</p>
+    <div>
+      <p class="footer-title">Contact</p>
+      <a href="https://github.com/michelevettone/airpointer-download/issues">Report an issue</a>
+    </div>
   </div>
+  <div class="shell footer-bottom">
+    <p>© 2026 Michele Vettone</p>
+    <p>No cookies. No analytics. No scripts.</p>
+  </div>
+</footer>
 
-  <footer>
-    <div>Air Pointer · <a href="/">Home</a> · <a href="/privacy">Privacy</a></div>
-  </footer>
-
-</div>
 </body>
 </html>
