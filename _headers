@@ -1,0 +1,3 @@
+# Revalidate on every load so a deploy is visible immediately.
+/*
+  Cache-Control: public, max-age=0, must-revalidate
