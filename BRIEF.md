@@ -14,7 +14,7 @@ privacy policy, the support page.
 The iPhone app is in public beta on TestFlight: <https://testflight.apple.com/join/q9EmkjqU>
 
 The App Store listing (`id 6833520222`, <https://apps.apple.com/app/id6833520222>) is not live yet.
-The free Mac and Windows companions are on GitHub Releases; they are not distributed through TestFlight.
+The free Mac companion is on GitHub Releases and the Windows one on the Microsoft Store; neither is distributed through TestFlight.
 
 ## Audience
 
