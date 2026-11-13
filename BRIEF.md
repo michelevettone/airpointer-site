@@ -30,7 +30,7 @@ Not a developer audience. Not a place for feature lists longer than a screen.
 | Thing | Why |
 |---|---|
 | `/privacy` and `/support` paths | They are hardcoded in the iPhone app (`Config.swift`) and in App Store Connect |
-| Static HTML/CSS, no JavaScript, no framework, no build step | Deploy is `npx wrangler pages deploy . --project-name airpointer` |
+| Static HTML/CSS, no JavaScript, no framework, no build step | Push to `main`: Cloudflare Pages deploys automatically |
 | No cookies, no analytics, no third-party scripts | The product's whole claim is "no tracking"; it also avoids a cookie banner |
 | English only | The app is localized, the site is not |
 | Download links point to `releases/latest/download/…` | The asset names are a contract |
@@ -60,12 +60,12 @@ only, no account, no data collected.
 ## Deploy
 
 ```sh
-cd ~/Developer/airpointer-site
-npx wrangler pages deploy . --project-name airpointer
+git push origin main
 ```
 
-Pushing to GitHub may not deploy: the Pages webhook has been unreliable. Run the command and verify
-the live site; that is the deployment.
+Cloudflare Pages is connected to this repository: every push to `main` builds and publishes, other
+branches become preview URLs. There is no build step. A manual
+`npx wrangler pages deploy . --project-name airpointer` still works as a fallback.
 
 ## Maintenance
 
