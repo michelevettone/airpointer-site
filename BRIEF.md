@@ -11,10 +11,10 @@ privacy policy, the support page.
 
 ## Current release state
 
-The iPhone app is in public beta on TestFlight: <https://testflight.apple.com/join/q9EmkjqU>
-
-The App Store listing (`id 6833520222`, <https://apps.apple.com/app/id6833520222>) is not live yet.
-The free Mac companion is on GitHub Releases and the Windows one on the Microsoft Store; neither is distributed through TestFlight.
+The App Store listing (`id 6833520222`, <https://apps.apple.com/app/id6833520222>) is live with 1.0.2;
+1.0.3 (Duo layouts, key pages, presets and automatic presets) is in review. The free Mac companion is
+on GitHub Releases and the Windows one on the Microsoft Store; both are updated to 1.1.13 for
+automatic presets. Neither receiver is distributed through TestFlight.
 
 ## Audience
 
@@ -39,15 +39,16 @@ Not a developer audience. Not a place for feature lists longer than a screen.
 
 - App icon: `iPhone/…/AppIcon.png` (1024², no alpha) — in this repo as `icon-512.png`
 - Menu bar mark: transparent glyph, `favicon-light.png` / `favicon-dark.png`
-- Screenshots: `AppStore/screenshots/iphone/<locale>/` in `michelevettone/PhonePointer`,
-  1320×2868, six per locale
-- Site screenshots: `assets/aim.png`, `trackpad.png`, `keyboard.png`, `present.png` — four of the six
+- Screenshots: `AppStore/screenshots/iphone/<locale>/` and `AppStore/screenshots/duo/<locale>/`
+  in `michelevettone/airpointer`, 1320×2868 (iPhone) and 2007×2853 (Duo), seven/nine per locale
+- Site screenshots: `assets/aim.png`, `trackpad.png`, `keyboard.png`, `present.png`, `keys.png` —
+  raw app screens from `AppStore/screens-source/iphone/en/`
 - Demo video: `AppStore/demo.mp4` in the same repo (not used on the site yet)
 
 ## Copy
 
 The source of truth for the English product text is `AppStore/metadata.md` in
-`michelevettone/PhonePointer` (description, keywords, promotional text, review notes). The 13 localized
+`michelevettone/airpointer` (description, keywords, promotional text, review notes). The 13 localized
 listings live in `AppStore/localized/`.
 
 Do not invent claims. Everything the site says must be true of the app: free companion app, Bluetooth
@@ -84,5 +85,5 @@ branches become preview URLs. There is no build step. A manual
 
 ## Current structure
 
-`index.html` (landing), `privacy.html`, `support.html`, `style.css`, favicons, `assets/` with the four
+`index.html` (landing), `privacy.html`, `support.html`, `style.css`, favicons, `assets/` with the five
 screenshots. No JavaScript.
