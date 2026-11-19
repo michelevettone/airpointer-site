@@ -977,3 +977,63 @@ footer a:hover { color: var(--fg); text-decoration: underline; text-underline-of
   .card:hover, .os-card:hover, .btn:hover { transform: none; }
   ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
 }
+
+/* ---------- Vice (limited time) ---------- */
+
+.vice-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin: 0 0 20px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #c9349b, #f36a78 55%, #ff9b55);
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(201, 52, 155, .24);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.vice-pill:hover { transform: translateY(-1px); box-shadow: 0 10px 30px rgba(201, 52, 155, .34); }
+.vice-pill span { width: 6px; height: 6px; border-radius: 50%; background: #ffb458; box-shadow: 0 0 10px rgba(255, 180, 88, .95); }
+
+.vice { padding: clamp(48px, 7vw, 96px) 0; }
+.vice-card {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: var(--radius);
+  background: linear-gradient(150deg, #1b0a2e, #3b146b 38%, #7b208f 68%, #c9349b);
+}
+.vice-copy { max-width: 780px; padding: clamp(28px, 5vw, 64px); }
+.vice h2 {
+  margin: 0 0 16px;
+  color: #fff;
+  font-size: clamp(44px, 7vw, 86px);
+  letter-spacing: -.04em;
+}
+.vice .eyebrow { color: rgba(255, 255, 255, .7); }
+.vice .eyebrow .dot { background: #ffb458; box-shadow: 0 0 14px rgba(255, 180, 88, .9); }
+.vice .sub {
+  max-width: 62ch;
+  color: rgba(255, 255, 255, .82);
+  font-size: clamp(16px, 2vw, 19px);
+}
+.vice .sub strong { color: #fff; }
+.vice .btn.primary { margin-top: 6px; background: #fff; color: #1b0a2e; }
+.vice .btn.primary:hover { background: #ffb458; }
+.vice .fine { margin: 12px 0 0; color: rgba(255, 255, 255, .62); font-size: 12.5px; }
+.vice-art { margin: 0; border-top: 1px solid rgba(255, 255, 255, .14); }
+.vice-art img { display: block; width: 100%; height: auto; }
+
+@media (max-width: 860px) {
+  .vice-card { border-radius: 22px; }
+  .vice-copy { padding: 28px 24px 30px; }
+  .vice h2 { font-size: clamp(42px, 12vw, 62px); }
+  .vice .sub { font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .vice-pill, .vice-pill:hover { transform: none; transition: none; }
+}

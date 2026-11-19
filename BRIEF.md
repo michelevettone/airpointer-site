@@ -11,10 +11,14 @@ privacy policy, the support page.
 
 ## Current release state
 
-The App Store listing (`id 6833520222`, <https://apps.apple.com/app/id6833520222>) is live with 1.0.2;
-1.0.3 (Duo layouts, key pages, presets and automatic presets) is in review. The free Mac companion is
-on GitHub Releases and the Windows one on the Microsoft Store; both are updated to 1.1.13 for
-automatic presets. Neither receiver is distributed through TestFlight.
+The App Store listing (`id 6833520222`, <https://apps.apple.com/app/id6833520222>) is live with 1.1.0,
+which adds the limited-time **Vice** theme. The free Mac companion is on GitHub Releases and the
+Windows one on the Microsoft Store; both are updated to 1.1.14. Neither receiver is distributed
+through TestFlight.
+
+The Vice theme is a campaign, not a permanent feature: it is available in the app until
+**8 December 2026, 00:00 CET**. The landing page section `#vice`, the hero pill and the Vice support
+section must be removed after that date. The App Store event deep-links to the home page.
 
 ## Audience
 
@@ -56,7 +60,8 @@ only, no account, no data collected.
 
 - The app keeps the screen awake while it is in the foreground. Never tell users to keep the screen
   on or unlocked; the only requirement is that Air Pointer stays in the foreground.
-- Do not say the app is on the App Store until the listing is live: the current iPhone CTA is TestFlight.
+- The app is live on the App Store: use the official App Store badge and link; the `apple-itunes-app`
+  smart banner is enabled on all three pages.
 
 ## Deploy
 
@@ -73,11 +78,10 @@ branches become preview URLs. There is no build step. A manual
 - **Cache.** Cloudflare serves `style.css` and the screenshots with `max-age=14400`. When the CSS or a
   screenshot changes, bump the `?v=` query on its URL in the HTML. Otherwise a browser can keep the
   old file for up to four hours.
-- **iPhone CTA.** The site links the TestFlight beta from the hero, the iPhone download card, the
-  footer and Support. When the App Store listing is live, replace those links, restore the official
-  white App Store badge (Apple badge API:
-  `https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us`), and
-  uncomment `apple-itunes-app` in the three pages.
+- **iPhone CTA.** The site links the App Store from the hero, the iPhone download card, the footer
+  and Support. The official white App Store badge and the `apple-itunes-app` smart banner are in
+  place. If the badge is ever regenerated, use the Apple badge API:
+  `https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us`.
 - **Clean URLs.** Cloudflare serves `/privacy` and `/support` from `privacy.html` and `support.html`.
   A local `python3 -m http.server` needs `/privacy.html` and `/support.html` directly.
 - **No scripts.** The mode switcher is a CSS-only radio group; scroll reveals are CSS scroll timelines
