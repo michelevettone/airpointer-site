@@ -11,14 +11,9 @@ privacy policy, the support page.
 
 ## Current release state
 
-The App Store listing (`id 6833520222`, <https://apps.apple.com/app/id6833520222>) is live with 1.1.0,
-which adds the limited-time **Vice** theme. The free Mac companion is on GitHub Releases and the
-Windows one on the Microsoft Store; both are updated to 1.1.14. Neither receiver is distributed
-through TestFlight.
-
-The Vice theme is a campaign, not a permanent feature: it is available in the app until
-**8 December 2026, 00:00 CET**. The landing page section `#vice`, the hero pill and the Vice support
-section must be removed after that date. The App Store event deep-links to the home page.
+The App Store listing (`id 6833520222`, <https://apps.apple.com/app/id6833520222>) is live with 1.1.0.
+The free Mac companion is on GitHub Releases and the Windows one on the Microsoft Store; both are
+updated to 1.1.14. Neither receiver is distributed through TestFlight.
 
 ## Audience
 
